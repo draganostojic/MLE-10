@@ -1,0 +1,87 @@
+Algorithm Understanding
+Feature selection methods are intended to reduce the number of input variables to those that are believed to be most useful to a model in order to predict the target variable. What algorithms can be used to automatically select the most important features (regression, etc..)? Describe at least 3?
+
+
+Filter methods:
+
+These methods are independent on ML model. Filter methods are based on analyzing statistical relationship between input feature and output variable. We are selecting the features that have the strongest relationship with the output variables. Because input data or target variable can be categorical or numerical we can choose different statistical tests that measure influence between input variable and output target variable depending on the type of data.
+
+
+
+Wrapper method
+
+In wrapper methods we iteratively select different subsets of features then train the model, then measure model performance and we repeat that for different subsets. Then we select subset of features that gives overall best performing model
+
+
+
+Embedded method
+
+These methods combine Filter and Wrapper methods. As in Filter methods we use a statistical test to get a subset of features. Then as in wrapper method these features are used to train the model and measure performance. Then through iteration a best subset is selected. The key point is that subset is generated using statistical method and instead of ad-hoc.
+
+
+
+
+
+	
+1 pts
+Full Marks
+	
+0 pts
+No Marks
+	
+1 pts
+
+
+
+This criterion is linked to a Learning Outcome Interview Readiness
+Explain data leakage and overfitting (define each)?
+Data leakage is when verification data  (for example used for testing) gets into the training set of the model so the model will do well in testing and verification but poorly in production.
+Overfitting is when model performs well on the training data but poorly on verification data. This could be understood as the training data is not a good representation of the data that the model is expected to predict.
+Explain the effect of data leakage and overfitting on the performance of an ML model.
+
+In the case of data leakage, model performs well on verification but poorly on predicting new data for example in production. In overfitting scenario model performs well in testing but poorly on verification and in production.
+
+	
+1 pts
+Full Marks
+	
+0 pts
+No Marks
+	
+1 pts
+
+
+
+This criterion is linked to a Learning Outcome Interview Readiness
+Explain what our outliers in your data?
+Outliers in the data is very far compared to the median of the data set. in the boxplot outliers are 1.5 (mild) or 3 times (extreme) interquartile distance (distance between first and 3rd quartile).
+Explain at least two methods to deal/treat outliers in your data?
+Discard outliers if they are known to be wrong values. Another approach is to not do anything because outliers are rare events that have to be taken into account in order for ML model to predict correctly. Other approach is to cap the outlier or to input it another value.
+
+	
+1 pts
+Full Marks
+	
+0 pts
+No Marks
+	
+1 pts
+
+
+
+This criterion is linked to a Learning Outcome Interview Readiness
+What is feature scaling and why is it important to our model?
+Feature scaling is necessary in order to use some algorithm that require data in the standard format and also because ML models are sensitive to the ranges of the data. minmax scaling scales all data to the range for example [0..1] or [-1, 1]. z-scaling requires that std deviation is 1 and mean is 0 so data is appropriately scaled.
+Explain the different between Normalization and Standardization?
+Normalization is dividing by a constant to reduce to a certain range. Standardization is subtracting the mean and dividing by std deviation to redude mean to 0 and standard deviation to 1.
+
+	
+1 pts
+Full Marks
+	
+0 pts
+No Marks
+	
+1 pts
+
+

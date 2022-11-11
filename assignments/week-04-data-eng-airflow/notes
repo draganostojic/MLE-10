@@ -1,0 +1,63 @@
+Get familiar with SciKit learn (predictive analysis)
+
+https://scikit-learn.org/stable/user_guide.html
+
+Linear regression is a good starting point
+
+We want predictors to be correlated to responses
+
+Pandas documentation
+
+https://pandas.pydata.org/pandas-docs/stable/index.html
+
+Look ahead bias when looking into test data
+
+What is a break between training and test data? 
+
+It is more important for small data sets than for large
+
+80/20, 70/30
+
+For DataFrames there is a command keys
+
+Options to deal with Nan's
+
+1) Drop them if there is a lot of data and small amount of NaN's. In interview don't say that.
+
+2) Imputing values (mean overall average won't change, median, use most recent available value ppl that work time series)
+
+Never alter raw data. Instead work with the copy
+
+Comparison between matplotlib and seaborn
+
+https://analyticsindiamag.com/comparing-python-data-visualization-tools-matplotlib-vs-seaborn/
+
+With time series visualize your data because pic is worth a thousand words
+
+Quiero acostarme al lado de ti y embrazarte y poner miles besos en tu cara, tus ojos y tus labias.
+
+Add all variables initially then  start removing without affecting performance. Get minimum number of parameters possible.
+
+mean function if passed a parameter will ignore NANs
+
+For week to week sales change to delta
+
+AirFlow for automating workflow
+
+https://airflow.apache.org/
+https://airflow.apache.org/docs/apache-airflow/stable/index.html
+https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
+
+Look readme inside the workflow folder
+
+What to read:
+
+https://medium.com/geekculture/the-story-behind-random-seed-42-in-machine-learning-b838c4ac290a
+https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data
+https://analyticsindiamag.com/comparing-python-data-visualization-tools-matplotlib-vs-seaborn/
+https://pandas.pydata.org/docs/getting_started/intro_tutorials/09_timeseries.html
+https://scikit-learn.org/stable/user_guide.html
+https://www.tableau.com/learn/articles/what-is-data-cleaning
+
+
+
