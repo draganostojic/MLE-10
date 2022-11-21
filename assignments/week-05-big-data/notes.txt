@@ -22,3 +22,9 @@ https://spark.apache.org/docs/3.3.1/sql-data-sources-load-save-functions.html#bu
 
 https://stackoverflow.com/questions/45227899/spark-csv-read-option
 
+https://spark.apache.org/docs/2.3.1/sql-programming-guide.html
+
+https://docs.delta.io/latest/delta-batch.html#language-python
+
+https://docs.delta.io/latest/api/python/index.html
+
