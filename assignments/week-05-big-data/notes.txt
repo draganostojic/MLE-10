@@ -1,0 +1,19 @@
+Asad Norouzi
+  9:02 PM
+Spark User Guide
+9:02
+API Reference
+
+
+
+
+
+https://spark.apache.org/docs/latest/api/python/user_guide/index.html
+
+https://spark.apache.org/docs/latest/api/python/reference/index.html
+
+https://en.wikipedia.org/wiki/Logistic_regression look at the p(x) formulas to see the effect of the signs
+
+https://spark.apache.org/docs/3.3.1/sql-data-sources-load-save-functions.html#bucketing-sorting-and-partitioning
+
+
