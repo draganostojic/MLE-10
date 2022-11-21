@@ -17,3 +17,8 @@ https://en.wikipedia.org/wiki/Logistic_regression look at the p(x) formulas to s
 https://spark.apache.org/docs/3.3.1/sql-data-sources-load-save-functions.html#bucketing-sorting-and-partitioning
 
 
+1) How to spark read data from a csv file into a data frame
+
+
+https://stackoverflow.com/questions/45227899/spark-csv-read-option
+
