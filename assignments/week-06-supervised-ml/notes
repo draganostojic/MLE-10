@@ -1,0 +1,14 @@
+install the required packages under the current directory: `{Your Local Directory}/MLE-8/assignments/eda-walmart-sales/`
+    ```
+    pip install -r requirements.txt
+
+conda create --name fb-week6 python=3.9.12 pip
+conda activate fb-week6
+pip install jupyter
+pip install ipykernel
+conda install -n fb-week6 ipykernel --update-deps --force-reinstall
+python -m ipykernel install --user --name=fb-week6
+
+pip install pandas-profiling
+pip install tpot
+
