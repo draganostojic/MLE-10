@@ -12,3 +12,9 @@ python -m ipykernel install --user --name=fb-week6
 pip install pandas-profiling
 pip install tpot
 
+1) Some links
+
+https://scikit-learn.org/stable/modules/classes.html
+
+https://github.com/EpistasisLab/tpot/blob/master/tutorials/IRIS.ipynb
+
