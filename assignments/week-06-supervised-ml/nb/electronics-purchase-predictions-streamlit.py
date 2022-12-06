@@ -23,12 +23,12 @@ with st.sidebar:
     st.image("https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png" )    
 
     # Available models for selection
-    models = ["Logistic Regression", "SVM", "Gradient Boosting Classifier"]
+    models = ["Logistic Regression", "SVM", "Gradient Boosting Classifier", "Random Forest Model"]
 
     # Add model select boxes
     model1_select = st.selectbox(
         "Choose Model 1:",
-        ("Logistic Regression", "SVM", "Gradient Boosting Classifier")
+        ("Logistic Regression", "SVM", "Gradient Boosting Classifier", "Random Forest Model")
     )
     
     # Remove selected model 1 from model list
