@@ -26,3 +26,6 @@ drive.mount('/content/drive')
 
 
 
+Here is the fuel efficiency analysis with keras:
+
+https://www.tensorflow.org/tutorials/keras/regression
