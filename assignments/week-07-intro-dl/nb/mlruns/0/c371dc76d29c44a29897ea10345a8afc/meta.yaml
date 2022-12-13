@@ -1,0 +1,15 @@
+artifact_uri: file:///content/drive/MyDrive/FB/fb-week7/nb/mlruns/0/c371dc76d29c44a29897ea10345a8afc/artifacts
+end_time: 1670899636128
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c371dc76d29c44a29897ea10345a8afc
+run_name: nosy-lark-931
+run_uuid: c371dc76d29c44a29897ea10345a8afc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670899615340
+status: 3
+tags: []
+user_id: root
