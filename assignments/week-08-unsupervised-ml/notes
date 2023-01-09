@@ -2,3 +2,10 @@ sillhuette and elbow methods for k-means clustering
 
 https://www.kaggle.com/code/draganostojic/p2-sklearn-k-means-elbow-and-silhouette-method/edit
 
+pip install -r requirements.txt
+
+https://towardsdatascience.com/principal-component-analysis-pca-with-scikit-learn-1e84a0c731b0
+
+
+https://machinelearningmastery.com/semi-supervised-learning-with-label-spreading/
+
