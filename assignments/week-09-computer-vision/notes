@@ -17,3 +17,26 @@ https://savvyfarmlife.com/what-a-baby-goat-is-called/
 https://towardsdatascience.com/a-i-talks-with-animals-3f0a266acc79
 https://towardsdatascience.com/latent-semantic-analysis-intuition-math-implementation-a194aff870f8
 
+Google work in 2022
+
+https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html?m=1
+
+Corner detector on OpenCV
+
+Corner detectors
+
+If you think of edges as being lines, then corners are an obvious choice for features as they represent the intersection of two lines. 
+One of the earlier corner detectors was introduced by Harris, and it is still a very effective corner detector that gets used quite a lot: it's reliable and it's fast. 
+There's a tutorial explaining how Harris works on the OpenCV site 
+
+
+https://docs.opencv.org/3.4/dc/d0d/tutorial_py_features_harris.html
+
+
+https://github.com/rajasaad7/object-detection-using-yolo/blob/master/detect.py
+
+https://www.reddit.com/r/computervision/comments/40nxxo/how_can_i_detect_whiteboards/
+
+Transfer learning from a pre-trained base transformer NLP model to a classification model on Hugging Face and a quick POC using rapid UI protypting with Gradio
+https://www.youtube.com/watch?v=1v4Ut7umOUw
+
