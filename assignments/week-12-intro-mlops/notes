@@ -2,3 +2,129 @@ https://explore.skillbuilder.aws/learn
 
 https://pycon.switowski.com/03-project-structure-2-parts/cookiecutter/
 
+https://machinelearningmastery.com/time-series-forecasting-with-prophet-in-python/
+
+
+AWS
+https://681261969843.signin.aws.amazon.com/console
+
+
+dostojic-stock-predictor-fastapi
+
+dostojic-stock-predictor-instance
+
+
+Select firewall settings to allow ssh from anywhere on the internet (recommended to allow access
+only from your local machine normally for administrative purposes) and allow https and http (not recommended)
+so that my web application can be accessed from the web browser and so that I can run jupyter notebooks from
+the ec2 machine
+
+
+If you stop instance data is saved
+If you terminate it data is lost
+To persist accross instances use s3 storage
+
+Machine IP is 54.200.219.49
+
+Public DNS:
+ec2-54-200-219-49.us-west-2.compute.amazonaws.com
+
+
+To connect to instance
+
+ssh ec2-user@ec2-54-200-219-49.us-west-2.compute.amazonaws.com -i "~/Personal/FB/stock-predictor/dostojic-stock-predictor-fastapi.pem" 
+
+
+From vs code
+
+View
+Command Palette
+
+Remote-SSH: Add New SSH Host
+op click on remote explorer on the left activity bar
+
+and add the command
+
+
+https://code.visualstudio.com/docs/remote/ssh
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+
+
+$ ssh ec2-user@ec2-54-200-219-49.us-west-2.compute.amazonaws.com -i "~/Personal/FB/stock-predictor/dostojic-stock-predictor-fastapi.pem" 
+The authenticity of host 'ec2-54-200-219-49.us-west-2.compute.amazonaws.com (54.200.219.49)' can't be established.
+ECDSA key fingerprint is SHA256:0Ld6UmsAcz348BvD3tBQvNXsKDj9ImOPExSPq6ItUv8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-54-200-219-49.us-west-2.compute.amazonaws.com,54.200.219.49' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-30-47 ~]$ 
+
+In vs code I selected and this was added:
+
+Host ec2-54-200-219-49.us-west-2.compute.amazonaws.com
+  HostName ec2-54-200-219-49.us-west-2.compute.amazonaws.com
+  User ec2-user
+  IdentityFile ~/Personal/FB/stock-predictor/dostojic-stock-predictor-fastapi.pem
+
+Choose a configuration file path and the settings will be saved there
+To make a connection, click on the green left lower corner and select host
+
+
+A new window will open.
+
+Then to close use the same corner in the new window
+
+
+For the host to appear in the remote menu you need to press refresh button on the right side of remote
+
+
+To run the command from the local machine
+
+$ curl \
+> --header "Content-Type: application/json" \
+> --request POST \
+> --data '{"ticker":"MSFT", "days":7}' \
+> http://54.200.219.49:8000/predict
+
+
+I can check open connections with netstat -ao
+
+I can check if my service is visible on 8080 by using the following tool:
+
+https://www.portchecktool.com/
+
+I also checked eero settings. It disables incoming 8080 port.
+I need to create reservation or port forwarding on dragan IP for 8080 TCP&UDP and then my service is visible
+
+
+Now I can access service from EC2. So outgoing EC2 works.
+
+
+But I still can't access EC2 service on port 8080.
+
+
+I had to change from HTTP port on EC2 to cutsom TCP port 8000
+
+Then I can curl from my machine to EC2
+
+$ curl \
+ --header "Content-Type: application/json" \
+ --request POST \
+ --data '{"ticker":"MSFT", "days":7}' \
+ http://ec2-54-200-219-49.us-west-2.compute.amazonaws.com:8000/predict
+
+
+{"ticker":"MSFT","days":7,"forecast":{"02/07/2023":229.4357514883677,"02/08/2023":229.27908570247922,"02/09/2023":229.12241991659073,"02/10/2023":228.9657541307022,"02/11/2023":228.80908834481372,"02/12/2023":228.65242255892517,"02/13/2023":228.49575677303667}}
+
+
+
+Documentation
+
+http://ec2-54-200-219-49.us-west-2.compute.amazonaws.com:8000/docs
+
+
